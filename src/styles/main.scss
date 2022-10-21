@@ -1,0 +1,10 @@
+@import "./utils/imports";
+@import "./components/imports";
+
+body {
+    @include montserratRegular(14px);
+    -webkit-font-smoothing: antialiased;
+    color:$black;
+    line-height: 1.60em;
+    background-color: $white;
+}

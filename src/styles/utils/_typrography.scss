@@ -1,0 +1,46 @@
+$fontFamily: 'montserrat';
+
+@mixin montserratBlack($fontSize, $Weight: 900) {
+  font: $fontSize 'montserrat', sans-serif;
+  font-weight: 900;
+}
+
+@mixin montserratBold($fontSize, $Weight: 700) {
+  font: $fontSize $fontFamily, sans-serif;
+  font-weight: 700;
+}
+
+@mixin montserratExtraBold($fontSize, $Weight: 800) {
+  font: $fontSize $fontFamily, sans-serif;
+  font-weight: 800;
+}
+
+@mixin montserratExtraLight($fontSize, $Weight: 200) {
+  font: $fontSize $fontFamily, sans-serif;
+  font-weight: 200;
+}
+
+@mixin montserratLight($fontSize, $Weight: 300) {
+  font: $fontSize $fontFamily, sans-serif;
+  font-weight: 300;
+}
+
+@mixin montserratMedium($fontSize, $Weight: 500) {
+  font: $fontSize $fontFamily, sans-serif;
+  font-weight: 500;
+}
+
+@mixin montserratRegular($fontSize, $Weight: 400) {
+  font: $fontSize $fontFamily, sans-serif;
+  font-weight: 400;
+}
+
+@mixin montserratSemibold($fontSize, $Weight: 600) {
+  font: $fontSize $fontFamily, sans-serif;
+  font-weight: 600;
+}
+
+@mixin montserratThin($fontSize, $Weight: 100) {
+  font: $fontSize $fontFamily, sans-serif;
+  font-weight: 100;
+}
