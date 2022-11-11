@@ -1,0 +1,43 @@
+.box-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    .box-item {
+        width: calc(100% / 4 - 15px);
+        height: 400px;
+        background-color: red;
+        margin-right: 15px;
+        margin-bottom: 15px;
+
+        &:nth-of-type(4n) {
+            margin-right: 0;
+            width: calc(100% / 4);
+        }
+
+        @media screen and (max-width:1024px) {
+            width: calc(100% / 3 - 15px);
+        }
+
+        @media screen and (max-width:768px) {
+            width: calc(100% / 2 - 15px);
+        }
+
+        @media screen and (max-width:600px) {
+            width: calc(100%);
+        }
+
+        .box-body {
+            height: calc(100% - 120px);
+        }
+
+        .box-header {
+            height: 60px;
+            background-color: gray;
+        }
+
+        .box-footer {
+            height: 60px;
+            background-color: gray;
+        }
+    }
+}

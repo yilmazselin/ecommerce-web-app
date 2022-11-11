@@ -1,0 +1,42 @@
+.recommended-card-wrapper {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   gap: 15px; // grid yapısında otomatik aralarındaki boşlugu ayarlar
+   padding: 0 60px;
+   
+   .recommended-card{
+      img{
+          width: 100%;
+          height: 100%;
+         }  
+     .recommended-item-price{
+      display: flex;
+      font-size: 14px;
+      font-weight: 700;
+      margin-top: 15px;
+      color: #40484e;
+
+     }
+     .net-price{
+      color: $oldPrice;
+      margin-right: 10px;
+      text-decoration: line-through;
+     }
+   }
+   .recommended-item-title{
+   h5{
+      letter-spacing: .3px;
+      color: #40484e;
+      @include montserratExtraLight(14px);
+      margin-top: 5px;
+   }
+
+   }
+}
+.recommended-title{
+   text-align: center;
+   margin-top: 80px;
+   margin-bottom: 20px;
+   @include montserratExtraLight(24px);
+}

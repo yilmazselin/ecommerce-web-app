@@ -39,13 +39,6 @@ export default function HeaderNav() {
           </ul>
         </div>
       </div>
-      <div className="header-nav-img">
-        <img
-          src={require("../../assets/images/category-banner.png")}
-          alt=""
-          srcset=""
-        />
-      </div>
     </>
   );
 }

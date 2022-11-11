@@ -1,0 +1,67 @@
+    .campaign-card-wrapper {
+        display: flex;
+        flex-wrap: wrap; //Sığmayanları alt satıra at
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 15px; // grid yapısında otomatik aralarındaki boşlugu ayarlar
+        // padding: 0 60px;
+
+        .category-card {
+            position: relative;
+
+            .category-card-header {
+                background-color: orange;
+                width: 90px;
+                height: 45px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 999; //en üstte kalsın diye
+                border-bottom-right-radius: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                span {
+                    color: $white;
+                    @include montserratSemibold(14px);
+                }
+            }
+
+            .category-card-footer {
+                position: absolute;
+                bottom: 20px;
+                left: 10px;
+
+                h5 {
+                    color: white;
+                    @include montserratBold(15px);
+                    letter-spacing: 1px;
+                }
+            }
+
+            .category-card-img {
+                transition: all 0.2s ease;
+                overflow: hidden;
+
+                &:hover {
+                    box-shadow: 0 0 10px 2px #0000001f;
+                }
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    transition: all 0.2s ease;
+
+                    &:hover {
+                        transform: scale(1.02);
+                    }
+                }
+            }
+        }
+
+
+
+
+
+    }

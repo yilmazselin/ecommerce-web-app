@@ -1,0 +1,53 @@
+.registrary-wrapper {
+    height: 200px;
+    background-color: $lightGray;
+
+    .registrary-left-section {
+        width: 60%;
+    }
+
+    .registrary-right-section {
+        width: 40%;
+    }
+
+    .registrary-controller {
+        padding: 0 60px;
+        gap: 50px;
+        align-items: center;
+    }
+
+    .registrary-content {
+        p {
+            padding-top: 10px;
+        }
+    }
+
+    .e-mail-input {
+        input {
+            width: 320px;
+            height: 45px;
+            border: 1px solid #8f9ba7;
+            border-radius: 3px;
+            padding-left: 30px;
+            margin-right: 10px
+        }
+    }
+
+    .confirm-button {
+        display: flex;
+        width: 100px;
+        height: 45px;
+        align-items: center;
+        justify-content: center;
+        background-color: $button;
+        border-radius: 3px;
+        color: $white;
+        @include montserratBold(15px);
+        transition: all 0.2s ease;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+}

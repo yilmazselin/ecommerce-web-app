@@ -4,7 +4,15 @@
 body {
     @include montserratRegular(14px);
     -webkit-font-smoothing: antialiased;
-    color:$black;
+    color: $black;
     line-height: 1.60em;
     background-color: $white;
+
+    a {
+        transition: all 0.2s ease;
+    }
+
+    .h-100 {
+        height: 100%;
+    }
 }

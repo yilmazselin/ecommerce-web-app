@@ -43,34 +43,21 @@ function Header() {
               <img
                 src="https://cdn.vivense.com/images/header/logo/Vivense-logotype-white-new.svg"
                 alt=""
-                srcset=""
               />
             </a>
           </div>
           <div className="shorcut-icons">
             <ul className="d-flex">
               <li>
-                <img
-                  src={require("../../assets/images/user.png")}
-                  alt=""
-                  srcset=""
-                />
+                <img src={require("../../assets/images/user.png")} alt="" />
                 <a href="">Giriş Yap</a>
               </li>
               <li>
-                <img
-                  src={require("../../assets/images/user.png")}
-                  alt=""
-                  srcset=""
-                />
+                <img src={require("../../assets/images/user.png")} alt="" />
                 <a href="">Favorilerim</a>
               </li>
               <li>
-                <img
-                  src={require("../../assets/images/user.png")}
-                  alt=""
-                  srcset=""
-                />
+                <img src={require("../../assets/images/user.png")} alt="" />
                 <a href="">Sepetim</a>
               </li>
             </ul>

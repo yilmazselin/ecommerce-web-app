@@ -1,0 +1,40 @@
+.product-card-wrapper {
+    width: calc(100% / 4);
+
+    p {
+        color: black;
+    }
+
+    .product-card-body {
+        .product-image {
+            height: 200px;
+            width: 100%;
+        }
+    }
+
+    .product-badge {
+        display: flex;
+
+        .first-badge {
+            height: 22px;
+            border: solid;
+            border-radius: 8px;
+            text-align: center;
+            background-color: $blue;
+
+            p {
+                color: $white;
+                font-size: 10px;
+                font-weight: 500;
+            }
+        }
+
+        .second-bagde {
+            img {
+                height: 30px;
+                width: 100px;
+            }
+
+        }
+    }
+}
