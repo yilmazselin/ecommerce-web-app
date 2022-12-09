@@ -164,7 +164,6 @@ export default function HomePage() {
       />
       <CampaignBanner image="https://img.vivense.com/_Y0DtZCoR_As9zOqtAwH-3fUFVM=/images/fa862230fad34436bacd622a39673bcd.gif" />
       <RegistraryBanner />
-      <ProductsPage />
     </>
   );
 }

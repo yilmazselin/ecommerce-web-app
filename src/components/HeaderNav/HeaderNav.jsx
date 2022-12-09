@@ -7,31 +7,31 @@ export default function HeaderNav() {
         <div className="header-nav-menu justify-content-space">
           <ul className="d-flex">
             <li>
-              <a href="">Dekorasyon</a>
+              <a href="">Vivense Collection</a>
             </li>
             <li>
-              <a href="">Dekorasyon</a>
+              <a href="">Yemek Odası</a>
             </li>
             <li>
-              <a href="">Dekorasyon</a>
+              <a href="">Yatak Odası</a>
             </li>
             <li>
-              <a href="">Dekorasyon</a>
+              <a href="">Mutfak</a>
             </li>
             <li>
-              <a href="">Dekorasyon</a>
+              <a href="">Çocuk + Genç</a>
             </li>
             <li>
-              <a href="">Dekorasyon</a>
+              <a href="">Çalışma Odası + Ofis</a>
             </li>
             <li>
-              <a href="">Dekorasyon</a>
+              <a href="">Dolap + Antre</a>
             </li>
             <li>
-              <a href="">Dekorasyon</a>
+              <a href="">Halı</a>
             </li>
             <li>
-              <a href="">Dekorasyon</a>
+              <a href="">Aydınlatma</a>
             </li>
             <li>
               <a href="">Dekorasyon</a>

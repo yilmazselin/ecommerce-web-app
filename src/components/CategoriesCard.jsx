@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function CategoriesCard({ data, lenght }) {
   const imageStyle = {
@@ -7,7 +8,7 @@ export default function CategoriesCard({ data, lenght }) {
   };
 
   return (
-    <a href="#!" style={imageStyle}>
+    <Link style={imageStyle} to={"/products"}>
       <div className="card-container">
         <div className="category-card">
           <div className="category-card-img">
@@ -19,6 +20,6 @@ export default function CategoriesCard({ data, lenght }) {
           </div>
         </div>
       </div>
-    </a>
+    </Link>
   );
 }

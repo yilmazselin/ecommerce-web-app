@@ -1,40 +1,201 @@
-.product-card-wrapper {
-    width: calc(100% / 4);
+.product-cards {
+    display: flex;
+    flex-wrap: wrap;
 
-    p {
-        color: black;
+    .product-card-wrapper {
+        width: calc(100% / 4 - 15px);
+        margin-right: 15px;
+        margin-bottom: 15px;
+
+        &:nth-of-type(4n) {
+            margin-right: 0;
+            width: calc(100% / 4);
+
+        }
+
+        p {
+            color: black;
+        }
+
+        .product-card-body {
+            .product-image {
+                height: 200px;
+                width: 100%;
+            }
+        }
+
+        .product-badge {
+            display: flex;
+            gap: 5px;
+
+
+            .first-badge {
+                height: 22px;
+                border-radius: 8px;
+                text-align: center;
+                background-color: $blue;
+                color: $white;
+                font-size: 12px;
+                font-weight: 500;
+                padding: 0 5px;
+            }
+
+            span {
+                font-weight: 700;
+            }
+
+            .second-bagde {
+                img {
+                    height: 30px;
+                    width: 100px;
+                }
+
+            }
+        }
+
+        .product-card-footer {
+            .product-title {
+                color: #40484e;
+                padding: 5px 0px 5px 0;
+                @include montserratMedium(14px);
+                line-height: 16px;
+            }
+
+            .product-price {
+                color: $orange;
+                font-weight: 800;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.product-sort {
+    margin-bottom: 15px;
+
+    select {
+
+        margin-left: auto;
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        width: 200px;
+        height: 35px;
+        border-color: gray;
+        background-color: #f5f5f5;
+        border-radius: 5px;
+        border: none;
+        color: $gray;
+        @include montserratBold(13px)
+    }
+}
+
+.container-controller {
+    padding: 0 90px;
+
+}
+
+.product-name {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 50%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    padding: 0 163px;
+    background-color: #f9f9f9;
+    @include montserratExtraBold(14px)
+}
+
+.product-details-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 20px;
+
+    .product-detail-slider {
+        width: 50%;
+        height: 400px;
+
+        .mySwiper2 {
+            margin-bottom: 10px;
+        }
     }
 
-    .product-card-body {
-        .product-image {
-            height: 200px;
+}
+
+.product-detail-card {
+    width: 50%;
+    height: 410px;
+
+
+    .card-title {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        height: 80px;
+        background-color: #fbfbfb
+    }
+
+    .card-body {
+        height: 330px;
+        background-color: #ffff;
+    }
+
+    .product-detail-price {
+        padding: 2px 4px;
+        margin: 0 auto;
+        color: $orange;
+        @include montserratExtraBold(20px)
+    }
+
+    .product-table-detail {
+        padding: 10px 15px;
+
+        .list-item-wrapper {
             width: 100%;
         }
-    }
 
-    .product-badge {
-        display: flex;
-
-        .first-badge {
-            height: 22px;
-            border: solid;
-            border-radius: 8px;
-            text-align: center;
-            background-color: $blue;
-
-            p {
-                color: $white;
-                font-size: 10px;
-                font-weight: 500;
-            }
+        p {
+            display: inline-block;
+            margin-bottom: 0;
         }
 
-        .second-bagde {
-            img {
-                height: 30px;
-                width: 100px;
+        .list-item {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #efefef;
+            margin-bottom: 10px;
+
+            &:not(:first-of-type) {
+                font-size: 14px;
+                color: #323332;
             }
 
+            &:last-of-type {
+                font-weight: 700;
+            }
+
+            padding-left: 0;
+        }
+
+        .add-basket-btn {
+            button {
+                background-color: #1c757e;
+                color: #fff;
+                width: 100%;
+                height: 35px;
+                border-radius: 5px;
+                transition: all 0.2s ease;
+                @include montserratSemibold(14px);
+
+                &:hover {
+                    background-color: darken($color: #1c757e, $amount: 5);
+                }
+            }
         }
     }
 }

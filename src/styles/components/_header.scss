@@ -1,45 +1,61 @@
-.header{
+.header {
     width: 100%;
     height: 35px;
     background-color: $gray;
 }
 
-.header{
-    li{
+.header {
+    li {
         padding-top: 7px;
         margin-right: 25px;
         font-weight: 600;
         text-transform: uppercase;
         font-size: 12px;
     }
-    a{
+
+    a {
         color: $white;
     }
-    a:hover{
-        color:$blue;
+
+    a:hover {
+        color: $blue;
+    }
+
+    .header-right {
+        li {
+            &:last-of-type {
+                a {
+                    color: $orange;
+                }
+            }
+        }
     }
 }
-.middle-header{
-       display: flex;
-       align-items: center;
-       margin: 25px 0;
-       margin-top: 30px;
 
-       .shorcut-icons {
-        li{
-            
+.middle-header {
+    display: flex;
+    align-items: center;
+    margin: 25px 0;
+    margin-top: 30px;
+
+    .shorcut-icons {
+        li {
+
             font-size: 12px;
             font-weight: 600;
             display: flex;
             align-items: center;
             font-weight: 600;
-            &+li{
+
+            &+li {
                 margin-left: 25px;
             }
         }
-        a{
+
+        a {
             color: #41484e;
-            &:hover{
+
+            &:hover {
                 color: $hoverGreen;
             }
         }
@@ -47,24 +63,26 @@
 }
 
 .header-nav-menu {
-    ul{
+    ul {
         justify-content: space-between;
     }
-   a{
-    display: inline-block;
-    padding: 10px 0 11px;
-    letter-spacing: .5px;
-    font-weight: bold;
-    line-height: 17px;
-    text-decoration: none;
-    position: relative;
-    color:#40484e;
-    font-size: 12px;
-    text-transform: uppercase;
-   }
+
+    a {
+        display: inline-block;
+        padding: 10px 0 11px;
+        letter-spacing: .5px;
+        font-weight: bold;
+        line-height: 17px;
+        text-decoration: none;
+        position: relative;
+        color: #40484e;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
 }
+
 .header-nav-img {
-    img{
+    img {
         width: 100%;
         height: 200px;
         object-fit: cover;

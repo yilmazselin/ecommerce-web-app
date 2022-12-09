@@ -1,16 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-function ProductCard() {
+function ProductCard({ data }) {
   return (
-    <div className="product-card-wrapper">
+    <Link to={`/products/detail/${data.id}`} className="product-card-wrapper">
       <div className="product-card-body">
-        <img
-          className="product-image"
-          src="https://img.vivense.com/1920x1280/images/ea5f03f99e174eab94a274566a915fb0.jpg"
-          alt=""
-        />
+        <img className="product-image" src={data.image} alt="" />
         <div className="product-badge">
-          <p className="first-badge">sadece vivense'de</p>
+          <p className="first-badge">
+            sadece <span>vivense'de</span>
+          </p>
           <div className="second-badge">
             <img
               src="https://cdn.vivense.com/images/badges/vvns-high-score-badge.svg"
@@ -27,7 +26,7 @@ function ProductCard() {
           <span>5.469 TL</span>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
 
