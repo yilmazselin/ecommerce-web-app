@@ -1,11 +1,11 @@
 import React from "react";
-import CategoriesCardWrapper from "../components/CategoriesCardWrapper";
 import Header from "../components/Header/Header";
-import RecomendCardWrapper from "../components/RecommendCardWrapper";
-import CampaignBanner from "../components/CampaignBanner";
 import CampaignCardWrapper from "../components/Containers/CampaignCardWrapper";
-import RegistraryBanner from "../components/RegistraryBanner";
+import RegistraryBanner from "../components/RegistraryBanner/RegistraryBanner";
+import RecomendCardWrapper from "../components/Recomended/RecommendCardWrapper";
+import CampaignBanner from "../components/CampainBanner/CampaignBanner";
 import ProductsPage from "./ProductsPage";
+import CategoriesCardWrapper from "../components/Categories/CategoriesCardWrapper";
 
 export default function HomePage() {
   const homeCategories = [

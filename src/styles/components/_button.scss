@@ -1,0 +1,24 @@
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 175px;
+    height: 45px;
+    margin: 0 auto;
+    @include montserratBold(14px);
+    border-radius: 4px;
+    color: $white;
+    background-color: #909598;
+    transition: all 0.2s ease;
+
+    &:hover {
+        background-color: #5FC2B8;
+        transform: scale(1.02);
+    }
+
+    &.footer-register-btn {
+        margin-top: 10px;
+    }
+
+
+}

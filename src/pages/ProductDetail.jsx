@@ -7,6 +7,7 @@ import "swiper/css/navigation";
 import "swiper/css/thumbs";
 import { FreeMode, Navigation, Thumbs } from "swiper";
 import Accordion from "../components/Accordion/Accordion";
+import Footer from "../components/Footer/Footer";
 
 function ProductDetail() {
   const accordionData = [
@@ -14,18 +15,25 @@ function ProductDetail() {
       id: 0,
       title: "Ürün Özellikleri",
       description:
-        "Getir’de vereceğiniz her siparişe uygun bir kampanya bulabilirsiniz.",
+        "	Ürünün kapitonesinde 18 dns sünger kullanılmıştır. Ürün baza sandıklı, metal iskeletli, makaslı ve yatak olma özelliğine sahiptir. İki adet kırlent ürüne dahildir.",
     },
     {
       id: 1,
-      title: "Dakikalar içinde kapınızda",
-      description: "Getir’le siparişiniz dakikalar içinde kapınıza gelir.",
+      title: "Teslimat ve Kurulum",
+      description:
+        "Bu ürünün paket hacmi 30 desi üzeri olduğu için, yasa gereği kargoyla bina kapısında teslim edilir.Bu ürünün teslimatı ücretsizdir.Ürün demonte olarak teslim edilir. Kurulumunu kolayca yapabilmen için de ihtiyacın olan tüm parçalar kurulum şemasıyla birlikte gönderilir.",
     },
     {
       id: 2,
-      title: "Binlerce çeşit mutluluk",
+      title: "Ödeme ve Taksit",
       description:
-        "Getir’de binlerce çeşit arasından seçiminizi yapabilirsiniz.",
+        "Bonus, World, Maximum, Axess, Paraf, Card Finans kredi kartları ile 2, 3, 4, 5, 6, 7, 8 ve 9 taksitle ödeme yapabilirsin.       3D Secure hizmeti ve dünyanın önde gelen ödeme sistemleri firması Masterpass altyapısı sayesinde güvenli ödeme sistemimizle gönül rahatlığıyla alışverişini yapabilirsin.Havale, kredi ve banka kartı, nakit, parçalı ödeme seçenekleriyle Vivense.com üzerinden ya da showrooma gelerek sipariş oluşturabilirsin.",
+    },
+    {
+      id: 3,
+      title: "Satış Sonrası Destek",
+      description:
+        "Uzun uzun düşünmene gerek yok! Eğer siparişinden sonraki 3 gün içinde kararını değiştirirsen, siparişini tamamen ücretsiz olarak iptal edebilirsin. Ürünü teslim ettikten sonra da biz hep yanındayız. Eğer teslimattan sonra seni memnun etmeyen bir durum olursa 14 gün içinde bize haber vermen yeterli. Senin için çözüm sürecini hemen başlatır, en kısa sürede memnuniyetini sağlarız. Bu ürünü 2 yıl boyunca Vivense garantisi altında gönül rahatlığıyla kullanabilirsin.",
     },
   ];
 
@@ -137,6 +145,8 @@ function ProductDetail() {
           <Accordion key={element.id} data={element} /> //! döngünün içerisindeki her elemanı 1.parametre temsil eder
         ))}
       </div>
+
+      <Footer />
     </>
   );
 }
